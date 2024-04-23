@@ -16,5 +16,15 @@ namespace AgendaT7
         {
             InitializeComponent();
         }
+
+        private void buttonAdCon_Click(object sender, EventArgs e)
+        {
+            Contato contato = new Contato();
+            contato.Nome = textBoxNome.Text;
+            contato.Sobrenome = textBoxSobrenome.Text;
+            contato.Telefone = textBoxTelefone.Text;
+
+            listBoxContatos.Items.Add(contato.ToString());
+        }
     }
 }
