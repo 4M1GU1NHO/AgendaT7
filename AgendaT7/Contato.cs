@@ -56,7 +56,7 @@ namespace AgendaT7
         {
             Nome = "Fulano";
             Sobrenome = "Beltrano";
-            Telefone = "11 96969-6969";
+            Telefone = "11-96969-6969";
         }
         public Contato(string nome, string sobrenome, string telefone)
         {
@@ -67,8 +67,8 @@ namespace AgendaT7
         public override string ToString()
         {
             string saida = string.Empty;
-            saida += String.Format("{0}, {1}", Nome, Sobrenome);
-            saida += String.Format("({0}) {1}-{2}", Telefone.Substring(0, 2), Telefone.Substring(2, 5), Telefone.Substring(7, 4));
+            saida += String.Format("{0} {1}", Nome, Sobrenome);
+            saida += String.Format(" ({0})-{1}-{2}", Telefone.Substring(0, 2), Telefone.Substring(2, 5), Telefone.Substring(7, 4));
             return saida;
         }
     }

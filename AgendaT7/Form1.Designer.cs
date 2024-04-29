@@ -42,7 +42,7 @@
             // 
             this.buttonAdCon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAdCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdCon.Location = new System.Drawing.Point(65, 246);
+            this.buttonAdCon.Location = new System.Drawing.Point(65, 225);
             this.buttonAdCon.Name = "buttonAdCon";
             this.buttonAdCon.Size = new System.Drawing.Size(227, 125);
             this.buttonAdCon.TabIndex = 1;
@@ -86,7 +86,6 @@
             // textBoxNome
             // 
             this.textBoxNome.Location = new System.Drawing.Point(138, 34);
-            this.textBoxNome.Multiline = true;
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(187, 20);
             this.textBoxNome.TabIndex = 5;
@@ -94,7 +93,6 @@
             // textBoxTelefone
             // 
             this.textBoxTelefone.Location = new System.Drawing.Point(138, 153);
-            this.textBoxTelefone.Multiline = true;
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(187, 20);
             this.textBoxTelefone.TabIndex = 6;
@@ -102,7 +100,6 @@
             // textBoxSobrenome
             // 
             this.textBoxSobrenome.Location = new System.Drawing.Point(138, 95);
-            this.textBoxSobrenome.Multiline = true;
             this.textBoxSobrenome.Name = "textBoxSobrenome";
             this.textBoxSobrenome.Size = new System.Drawing.Size(187, 20);
             this.textBoxSobrenome.TabIndex = 7;
@@ -130,7 +127,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdCon);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lista de Contatos";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
