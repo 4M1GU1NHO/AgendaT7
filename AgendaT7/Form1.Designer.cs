@@ -36,15 +36,16 @@
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.textBoxSobrenome = new System.Windows.Forms.TextBox();
             this.listBoxContatos = new System.Windows.Forms.ListBox();
+            this.buttonOrg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAdCon
             // 
             this.buttonAdCon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAdCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdCon.Location = new System.Drawing.Point(65, 225);
+            this.buttonAdCon.Location = new System.Drawing.Point(12, 244);
             this.buttonAdCon.Name = "buttonAdCon";
-            this.buttonAdCon.Size = new System.Drawing.Size(227, 125);
+            this.buttonAdCon.Size = new System.Drawing.Size(170, 103);
             this.buttonAdCon.TabIndex = 1;
             this.buttonAdCon.Text = "Adicionar Contato";
             this.buttonAdCon.UseVisualStyleBackColor = false;
@@ -112,12 +113,25 @@
             this.listBoxContatos.Size = new System.Drawing.Size(283, 355);
             this.listBoxContatos.TabIndex = 8;
             // 
+            // buttonOrg
+            // 
+            this.buttonOrg.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonOrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrg.Location = new System.Drawing.Point(209, 244);
+            this.buttonOrg.Name = "buttonOrg";
+            this.buttonOrg.Size = new System.Drawing.Size(170, 103);
+            this.buttonOrg.TabIndex = 9;
+            this.buttonOrg.Text = "Organizar Contatos";
+            this.buttonOrg.UseVisualStyleBackColor = false;
+            this.buttonOrg.Click += new System.EventHandler(this.buttonOrg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(716, 381);
+            this.Controls.Add(this.buttonOrg);
             this.Controls.Add(this.listBoxContatos);
             this.Controls.Add(this.textBoxSobrenome);
             this.Controls.Add(this.textBoxTelefone);
@@ -143,6 +157,7 @@
         private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.TextBox textBoxSobrenome;
         private System.Windows.Forms.ListBox listBoxContatos;
+        private System.Windows.Forms.Button buttonOrg;
     }
 }
 
